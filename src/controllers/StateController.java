@@ -58,8 +58,6 @@ public class StateController {
 				@RequestParam("filter") String choice) {
 		ModelAndView mv = new ModelAndView("result.jsp");
 		stateDao.clearFilter();
-		System.out.println(choice);
-		System.out.println(input);
 		switch (choice) {
 		case "popGreater": // this one works
 			stateDao.applyFilter(s -> Integer.parseInt(s.getPopulation()) > parsePop(input, ">"));

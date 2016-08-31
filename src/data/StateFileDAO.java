@@ -68,7 +68,6 @@ public class StateFileDAO implements StateDAO {
 		for(State state : states) {
 			if(predicate.test(state)) {
 				filteredStates.add(state);
-System.out.println("adding..." + state.getName());
 			}
 		}
 	}
