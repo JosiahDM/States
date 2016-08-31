@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>State Search</title>
+    <link rel="stylesheet" href="layout.css" >
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="center" id="newStateForm">
+            <form action="SearchState.do" method="POST">
+                <h2>Search by...</h2>
+                <div id="newStateId">
+                    <ul>
+                        <li><input type="radio" name="filter" value="popGreater">Population Greater Than</li>
+                        <li><input type="radio" name="filter" value="popLess">Population Less Than</li>
+                        <li><input type="radio" name="filter" value="nameContains">Name Contains</li>
+                        <li><input type="radio" name="filter" value="nameStarts">Name Starts With</li>
+                    </ul>
+                    <input class="textInput" type="text" name="userInput"/>
+
+                    <input class="button" type="submit" value="Search" />
+                </div>
+
+            </form>
+            <button class="padbutton" onclick="goBack()">Go Back</button>
+                <script>
+                function goBack() {
+                    window.history.back();
+                }
+                </script>
+        </div>
+    </div>
+
+</body>
+</html>

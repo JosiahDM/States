@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*** end normalize ***/
+
+body {
+    height:100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-image: url("img/bridge.jpeg");
+    background-size: cover;
+    height:100%;
+}
+
+.boxLink {
+    height: 110px;
+    width: 200px;
+    float: left;
+    margin-right:30px;
+    background-color: rgba(66, 143, 203, .8);
+    border-radius: 100px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.boxLink:hover {
+    background-color: rgba(39, 82, 116, 0.9);
+}
+
+.linkContainer a {
+    padding-top:90px;
+}
+
+#centerLinks {
+    position:relative;
+    top:30%;
+    transform: translateY(-50%);
+}
+
+.center {
+    position:relative;
+    top:45%;
+    transform: translateY(-50%);
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.center form {
+    padding-top:18px;
+    background-color: rgba(255, 255, 255, 0.85);
+    height: 50px;
+    border-radius: 3px;
+}
+.textInput {
+    height:26px;
+    width: 180px;
+    border:1px solid rgb(158, 158, 158);
+    font-size: .9em;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.linkContainer {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    width:100px;
+    height:34px;
+    border:none;
+    border-radius: 1px;
+    font-size:.9em;
+    background-color:rgb(66, 143, 203);
+    color:white;
+}
+
+.padbutton {
+    width:100px;
+    height:34px;
+    border:none;
+    border-radius: 1px;
+    font-size:.9em;
+    background-color:rgb(66, 143, 203);
+    color:white;
+    margin-top: 20px;
+    margin-right:10px;
+}
+
+.padbutton:hover {
+    background-color: rgb(39, 82, 116);
+}
+
+.button:hover {
+    background-color: rgb(39, 82, 116);
+}
+
+#newStateId {
+    width:200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#newStateId span {
+    margin:10px;
+}
+#newStateId input{
+    margin-top:10px;
+    margin-left:-10px;
+}
+
+#newStateForm form {
+    height: 220px;
+}
+
+#results {
+    width: 80%;
+    min-width: 400px;
+    max-width: 600px;
+    background-color:rgba(255, 255, 255, 0.85);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding:10px;
+    border-radius: 3px;
+}
+
+#resultsPadding {
+    height:50px;
+}
+
+#gmap {
+    width: inherit;;
+    height: inherit;;
+}
+#gmapBorder {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height:300px;
+    border: 1px dashed grey;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size:1.2em;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:20px;
+}
+table tr {
+    text-align: center;
+}
+table td {
+    padding-right: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+#navTable td {
+    text-align: center;
+    padding: 5px;
+}
+#appHomeButton {
+    position: absolute;
+    top: 5px;
+    left:5px;
+}
+
+#siteHomeButton {
+    position: absolute;
+    top: 5px;
+    left:115px;
+    background-color: rgba(195, 195, 195, 0.5);
+}
+
+#siteHomeButton:hover {
+    background-color: rgba(195, 195, 195, 0.8);
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>States</title>
+    <link rel="stylesheet" href="layout.css" >
+
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+        	<form action="GetStateData.do" method="GET">
+        		<input class="textInput" type="text" name="name" placeholder="Name of State"/>
+        		<input class="button" type="submit" value="Search" />
+        	</form>
+
+            <button class="padbutton" onclick="goBack()">Go Back</button>
+                <script>
+                function goBack() {
+                    window.history.back();
+                }
+                </script>
+        </div>
+
+    </div>
+</body>
+</html>
