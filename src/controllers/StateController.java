@@ -66,7 +66,7 @@ public class StateController {
 			stateDao.applyFilter(s -> Integer.parseInt(s.getPopulation()) < parsePop(input, "<"));
 			break;
 		case "nameContains": // this one works
-			stateDao.applyFilter(s -> s.getName().contains(input));
+			stateDao.applyFilter(s -> s.getName().toLowerCase().contains(input.toLowerCase()));
 			break;
 		case "nameStarts": 
 			stateDao.applyFilter(s -> s.getName().charAt(0) == input.toUpperCase().charAt(0));

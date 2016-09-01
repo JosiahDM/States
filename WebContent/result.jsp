@@ -22,7 +22,7 @@
 
             	<c:choose>
             		<c:when test="${! empty state}">
-                        <table >
+                        <table>
                             <tr>
                                 <td>
                                     <img height=100 width="150" src="img/${state.name}.png"></img>
